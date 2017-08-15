@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/night_background"
+    tools:context="wifi.hack.com.hacking.MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:src="@drawable/ic_perm_scan_wifi_black_24dp"
+        android:id="@+id/scanImage"
+
+        android:layout_centerInParent="true"
+        android:layout_height="150dp" />
+
+    <ImageView
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/scanImage"
+        android:onClick="scan_onClick"
+        android:src="@drawable/scan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0F0"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="* Turn on your wifi"/>
+</RelativeLayout>
